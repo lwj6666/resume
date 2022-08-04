@@ -1,0 +1,84 @@
+// out:../css/
+
+@import url(./base.less);
+
+html,
+body{
+    background-color: #f5f5f5;
+    font-size: 14px;
+}
+
+.page{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0px 20px 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+
+    h2{
+        height: 20px;
+        margin: 20px 0px 20px -20px;
+        padding-left: 15px;
+        border-left: 5px solid #FBD26A;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 20px;
+    }
+
+    section{
+        .flex_row{
+            display: flex;
+            div{
+                flex: 1;
+                height: 100%;
+                padding-left: 15px;
+                border-right: 2px solid #ddd;
+                line-height: 40px;
+                &:last-child{
+                    border-right: 0px
+                }
+            }
+        }
+
+        .flex_column{
+            display: flex;
+            flex-direction: column;
+
+            div{
+                height: 40px;
+                padding-left: 15px;
+                border-top: 1px solid #ddd;
+                line-height: 40px;
+                
+                span{
+                    color: orange;
+                }
+            }
+        }
+
+        a{
+            color: #666;
+            &:hover{
+                color: #333;
+                text-decoration: underline;
+            }
+        }
+
+        .content{
+            border-radius: 5px;
+            border: 2px solid #ddd;
+            background-color: #f2f2f2;
+        }
+    }
+
+    .Professional_technology{
+        .flex_column{
+            div{
+                &:first-child{
+                    border-top: 0px;
+                }
+            }
+        }
+    }
+}
